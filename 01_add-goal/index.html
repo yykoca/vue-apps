@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A First App</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div id="app">
@@ -12,13 +18,15 @@
         <label for="goal">Goal</label>
         <input type="text" id="goal" v-model="enteredValue" />
         <button v-on:click="addGoal">Add Goal</button>
-        <button><a href="../index.html">Homepage </a></button>
       </div>
       <ul>
         <li>Learn Vue!</li>
         <li v-for="goal in goals">{{goal}}</li>
       </ul>
     </div>
+    <button id="homepage">
+      <a href="../index.html"><i class="fas fa-home"></i></a>
+    </button>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
   </body>
